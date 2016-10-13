@@ -1,15 +1,15 @@
 $(function(){
-			if(top.location.href.toLowerCase() == self.location.href.toLowerCase()) $(&#39;#docLink&#39;).show();
+			if(top.location.href.toLowerCase() == self.location.href.toLowerCase()) $('#docLink').show();
 
-			$(&#39;#tabNav ul&#39;).idTabs(&#39;tab1&#39;);
-			$(&#39;#tabNav ul a&#39;).one(&#39;click&#39;, function(){
-				var rel = $(this).attr(&#39;rel&#39;);
+			$('#tabNav ul').idTabs('tab1');
+			$('#tabNav ul a').one('click', function(){
+				var rel = $(this).attr('rel');
 				switch(rel){
-					case &#39;demo3&#39;:
-						$(&#39;#demo3&#39;).listmenu({
+					case 'demo3':
+						$('#demo3').listmenu({
 							includeNums: false,
 							includeOther: true,
-							noMatchText: &#39;No items under this letter&#39;,
+							noMatchText: 'No items under this letter',
 							showCounts: false,
 							//menuWidth: 700,
 							cols:{
@@ -18,22 +18,22 @@ $(function(){
 							}
 						});
 						break;
-					case &#39;demo4&#39;:
-						$(&#39;#demo4&#39;).listmenu();
+					case 'demo4':
+						$('#demo4').listmenu();
 						break;
-					case &#39;demo5&#39;:
-						$(&#39;#demo5&#39;).listmenu();
+					case 'demo5':
+						$('#demo5').listmenu();
 						break;
-					case &#39;demo6&#39;:
-						$(&#39;#demo6&#39;).listmenu({
-							noMatchText: &#39;No contacts available&#39;,
+					case 'demo6':
+						$('#demo6').listmenu({
+							noMatchText: 'No contacts available',
 							cols:{
 								count:3,
 								gutter:35
 							},
 							onClick:function($target){
-								if($target.is(&#39;a&#39;)){
-									alert($target.text() + &#39; was clicked&#39;);
+								if($target.is('a')){
+									alert($target.text() + ' was clicked');
 								}
 							}
 						});
@@ -42,15 +42,15 @@ $(function(){
 				return false;
 			});
 		
-			$(&#39;.demo:not(#demo6) a&#39;).click(function(){
-				alert(&#39;Links in this demo don\&#39;t actually go anywhere. See Demo 6 for an onClick handler.&#39;);
+			$('.demo:not(#demo6) a').click(function(){
+				alert('Links in this demo don\'t actually go anywhere. See Demo 6 for an onClick handler.');
 				return false;
 			});
 
-			$(&#39;#btnDemo2&#39;).click(function(){
-				$(&#39;#demo2&#39;).listmenu();
+			$('#btnDemo2').click(function(){
+				$('#demo2').listmenu();
 				$(this).hide();
 			});
 
-			$(&#39;#demo1&#39;).listmenu();
+			$('#demo1').listmenu();
 		});

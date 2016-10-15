@@ -267,7 +267,7 @@
 		showCounts: true,
 		menuWidth: null,
 		cols: {
-			count: 3,
+			count: 4,
 			gutter: 40
 		},
 		onClick: null

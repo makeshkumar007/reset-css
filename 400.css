@@ -17,7 +17,7 @@ body { margin:0; padding:0; font-family: Verdana, Arial, sans-serif; color: #3f3
 /*#aspnetForm { background: url(../img/top-bg.png) repeat-x; }*/
 body { background: url(../img/top-bg.png) repeat-x; }
 
-#page-wrapper { width: 960px; margin: 0 auto; background: url(../img/ihwy-logo.png) no-repeat; position: relative; }
+#page-wrapper { width: 1200px; margin: 0 auto; background: url(../img/ihwy-logo.png) no-repeat; position: relative; }
 .homeLink { position: absolute; display: block; width: 350px; height: 175px; outline: none; text-indent: -9999em; top: 0; left: 0; }
 #main .bottom { border-top:1px solid rgb(221, 221, 221); margin-top:30px; }
 
